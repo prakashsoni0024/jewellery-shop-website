@@ -21,7 +21,7 @@ const Contact = () => {
           <div className="px-6">
             <p className="font-serif text-sm text-gray-500">Location</p>
             <p className="mt-2 text-gray-900">
-              Main Market, Your City
+              Main Market, Jabalpur
             </p>
           </div>
 
