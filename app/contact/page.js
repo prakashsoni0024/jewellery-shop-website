@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <main className="bg-[#faf9f7]">
       {/* HERO */}
-      <section className="py-28 px-6 text-center">
+      <section className="py-24 px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-serif text-gray-900 tracking-wide">
           Visit <span className="text-yellow-600">Indra Jewellers</span>
         </h1>
@@ -12,27 +12,41 @@ const Contact = () => {
         </p>
       </section>
 
-      {/* INFO STRIP */}
+      {/* INFO STRIP – TRUST SIGNALS */}
       <section className="bg-white border-y border-gray-200">
-        <div
-          className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3
-          text-center py-10"
-        >
-          <div className="px-6">
-            <p className="font-serif text-sm text-gray-500">Location</p>
-            <p className="mt-2 text-gray-900">
-              Main Market, Your City
-            </p>
-          </div>
+        <div className="max-w-7xl mx-auto px-6 py-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {/* Item 1 */}
+            <div>
+              <p className="text-3xl font-serif text-yellow-600">25+</p>
+              <p className="mt-2 text-sm uppercase tracking-widest text-gray-500">
+                Years of Trust
+              </p>
+            </div>
 
-          <div className="px-6 border-y md:border-y-0 md:border-x border-gray-200">
-            <p className="font-serif text-sm text-gray-500">Call Us</p>
-            <p className="mt-2 text-gray-900">9876543210</p>
-          </div>
+            {/* Item 2 */}
+            <div>
+              <p className="text-3xl font-serif text-yellow-600">BIS</p>
+              <p className="mt-2 text-sm uppercase tracking-widest text-gray-500">
+                Hallmarked Gold
+              </p>
+            </div>
 
-          <div className="px-6">
-            <p className="font-serif text-sm text-gray-500">Timings</p>
-            <p className="mt-2 text-gray-900">10:00 AM – 8:00 PM</p>
+            {/* Item 3 */}
+            <div>
+              <p className="text-3xl font-serif text-yellow-600">100%</p>
+              <p className="mt-2 text-sm uppercase tracking-widest text-gray-500">
+                Purity Guarantee
+              </p>
+            </div>
+
+            {/* Item 4 */}
+            <div>
+              <p className="text-3xl font-serif text-yellow-600">10K+</p>
+              <p className="mt-2 text-sm uppercase tracking-widest text-gray-500">
+                Happy Families
+              </p>
+            </div>
           </div>
         </div>
       </section>
