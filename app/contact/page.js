@@ -20,7 +20,9 @@ const Contact = () => {
         >
           <div className="px-6">
             <p className="font-serif text-sm text-gray-500">Location</p>
-            <p className="mt-2 text-gray-900">Main Market, Your City</p>
+            <p className="mt-2 text-gray-900">
+              Main Market, Your City
+            </p>
           </div>
 
           <div className="px-6 border-y md:border-y-0 md:border-x border-gray-200">
