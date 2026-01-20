@@ -18,6 +18,11 @@ const slides = [
     title: "Traditional Classics",
     desc: "Timeless Indian Jewellery",
   },
+  {
+    img: "https://i.pinimg.com/1200x/29/dc/75/29dc751caa2eed0a2e2cd3c2fa568fbb.jpg",
+    title: "Custom Creations",
+    desc: "Crafted Just for You",
+  },
 ]
 
 const HeroCarousel = () => {
@@ -25,9 +30,11 @@ const HeroCarousel = () => {
 
   // Auto slide every 4 sec
   useEffect(() => {
+    console.log("Current slide:", current)
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length)
     }, 4000)
+
     return () => clearInterval(interval)
   }, [])
 

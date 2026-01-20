@@ -42,7 +42,7 @@ const Home = () => {
       {/* HERO */}
       <HeroCarousel />
 
-        {/* TRENDING NOW */}
+      {/* TRENDING NOW */}
       <section className="py-15 px-6 bg-[#faf9f7]">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-5xl font-serif text-gray-900">
@@ -56,10 +56,12 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {/* Card 1 */}
           <div className="group">
-            <div className="overflow-hidden rounded-2xl shadow-xl
+            <div
+              className="overflow-hidden rounded-2xl shadow-xl
               border border-transparent
               hover:border-yellow-500
-              transition-all duration-500">
+              transition-all duration-500"
+            >
               <img
                 src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw04fafb24/homepage/trendingNow/auspicious-trending.jpg"
                 alt="Auspicious Occasion"
@@ -72,11 +74,13 @@ const Home = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="group"> 
-            <div className="overflow-hidden rounded-2xl shadow-xl
+          <div className="group">
+            <div
+              className="overflow-hidden rounded-2xl shadow-xl
               border border-transparent
               hover:border-yellow-500
-              transition-all duration-500">
+              transition-all duration-500"
+            >
               <img
                 src="https://i.pinimg.com/1200x/6b/ca/28/6bca28caa241a733f1f9aa24b96a427e.jpg"
                 alt="Gifting Jewellery"
@@ -90,10 +94,12 @@ const Home = () => {
 
           {/* Card 3 */}
           <div className="group">
-            <div className="overflow-hidden rounded-2xl shadow-xl
+            <div
+              className="overflow-hidden rounded-2xl shadow-xl
               border border-transparent
               hover:border-yellow-500
-              transition-all duration-500">
+              transition-all duration-500"
+            >
               <img
                 src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw3d1461ae/homepage/trendingNow/drops-of-radiance-new.jpg"
                 alt="Drops of Radiance"
@@ -109,9 +115,14 @@ const Home = () => {
 
       {/* FEATURED DESIGNS */}
       <section className="py-14 px-4 bg-[#faf9f7] text-center overflow-hidden">
-        <h2 className="text-3xl md:text-5xl font-serif text-gray-900 mb-14">
-          Featured <span className="text-yellow-600">Designs</span>
-        </h2>
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-5xl font-serif text-gray-900">
+            Featured <span className="text-yellow-600">Designs</span>
+          </h2>
+          <p className="mt-3 text-gray-500 text-sm md:text-base">
+            Handpicked jewellery pieces just for you
+          </p>
+        </div>
 
         {/* MOBILE → horizontal scroll | DESKTOP → grid */}
         <div
@@ -184,23 +195,22 @@ const Home = () => {
       </section>
 
       {/* HIGHLIGHTS */}
-<section className="py-14 px-4 bg-[#faf9f7] text-center">
-  
-  {/* HEADING */}
-  <div className="mb-14">
-    <h2 className="text-3xl md:text-5xl font-serif text-gray-900">
-      Why Choose <span className="text-yellow-600">Indra Jewellers</span>
-    </h2>
-    <p className="mt-3 text-gray-500 text-sm md:text-base">
-      Crafted with trust, purity and timeless elegance
-    </p>
-  </div>
+      <section className="py-14 px-4 bg-[#faf9f7] text-center">
+        {/* HEADING */}
+        <div className="mb-14">
+          <h2 className="text-3xl md:text-5xl font-serif text-gray-900">
+            Why Choose <span className="text-yellow-600">Indra Jewellers</span>
+          </h2>
+          <p className="mt-3 text-gray-500 text-sm md:text-base">
+            Crafted with trust, purity and timeless elegance
+          </p>
+        </div>
 
-  <div className="grid grid-cols-3 md:grid-cols-3 gap-4 md:gap-10 max-w-6xl mx-auto">
-    {highlights.map((item, index) => (
-      <div
-        key={index}
-        className="
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-4 md:gap-10 max-w-6xl mx-auto">
+          {highlights.map((item, index) => (
+            <div
+              key={index}
+              className="
           group relative
           bg-white
           rounded-2xl
@@ -210,60 +220,57 @@ const Home = () => {
           hover:border-yellow-500
           transition-all duration-500
         "
-      >
-        {/* ICON */}
-        <div className="text-3xl md:text-5xl mb-3 text-gray-800">
-          {item.icon}
-        </div>
+            >
+              {/* ICON */}
+              <div className="text-3xl md:text-5xl mb-3 text-gray-800">
+                {item.icon}
+              </div>
 
-        {/* TITLE */}
-        <h3 className="font-serif text-gray-900 text-sm md:text-xl mb-1 md:mb-2">
-          {item.title}
-        </h3>
+              {/* TITLE */}
+              <h3 className="font-serif text-gray-900 text-sm md:text-xl mb-1 md:mb-2">
+                {item.title}
+              </h3>
 
-        {/* DESC */}
-        <p className="hidden md:block text-sm text-gray-600 leading-relaxed">
-          {item.desc}
-        </p>
+              {/* DESC */}
+              <p className="hidden md:block text-sm text-gray-600 leading-relaxed">
+                {item.desc}
+              </p>
 
-        {/* GOLD LINE (Featured jaisi) */}
-        <span
-          className="
+              {/* GOLD LINE (Featured jaisi) */}
+              <span
+                className="
             absolute bottom-0 left-0
             h-[2px] w-0
             bg-yellow-500
             group-hover:w-full
             transition-all duration-500
           "
-        />
-      </div>
-    ))}
-  </div>
-</section>
+              />
+            </div>
+          ))}
+        </div>
+      </section>
 
-{/* LUXURY DIVIDER LINE */}
-<section className="bg-[#faf9f7] py-7">
-<div className="mt-10 flex items-center justify-center gap-6 text-gray-400">
-  <span className="h-px w-24 bg-gray-300"></span>
+      {/* LUXURY DIVIDER LINE */}
+      <section className="bg-[#faf9f7] py-7">
+        <div className="mt-10 flex items-center justify-center gap-6 text-gray-400">
+          <span className="h-px w-24 bg-gray-300"></span>
 
-  <span className="text-xl text-yellow-500">✦</span>
+          <span className="text-xl text-yellow-500">✦</span>
 
-  <p className="font-serif italic text-sm md:text-lg text-gray-600 tracking-wide text-center max-w-2xl">
-    Trust us to be part of your precious moments and to deliver jewellery
-    that you’ll cherish forever.
-  </p>
+          <p className="font-serif italic text-sm md:text-lg text-gray-600 tracking-wide text-center max-w-2xl">
+            Trust us to be part of your precious moments and to deliver
+            jewellery that you’ll cherish forever.
+          </p>
 
-  <span className="text-xl text-yellow-500">✦</span>
+          <span className="text-xl text-yellow-500">✦</span>
 
-  <span className="h-px w-24 bg-gray-300"></span>
-</div>
-</section>
-
+          <span className="h-px w-24 bg-gray-300"></span>
+        </div>
+      </section>
 
       {/* OFFERS */}
       <Offers />
-
-    
     </main>
   );
 };
