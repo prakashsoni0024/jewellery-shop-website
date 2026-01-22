@@ -33,7 +33,7 @@ export default function JewellersUnifiedCalculator() {
   useEffect(() => {
     const fetchPrices = async () => {
       try {
-        const res = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/live-prices`);
+        const res = await axios.get("https://jewellery-backend-1.onrender.com/api/live-prices");
         setGold24K(res.data.gold["24k"]);
         setGold22K(res.data.gold["22k"]);
         setSilver(res.data.silver.price);
