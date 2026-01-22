@@ -42,7 +42,7 @@ const Contact = () => {
 
             {/* Item 4 */}
             <div>
-              <p className="text-3xl font-serif text-yellow-600">10K+</p>
+              <p className="text-3xl font-serif text-yellow-600">87.5K+</p>
               <p className="mt-2 text-sm uppercase tracking-widest text-gray-500">
                 Happy Families
               </p>
@@ -106,7 +106,7 @@ const Contact = () => {
                   <p className="uppercase tracking-widest text-xs text-gray-400">
                     Phone
                   </p>
-                  <p className="mt-1 text-gray-800">+91 98765 43210</p>
+                  <p className="mt-1 text-gray-800">+91  883 961 7340</p>
                 </div>
 
                 <div>

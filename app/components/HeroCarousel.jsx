@@ -64,13 +64,13 @@ const HeroCarousel = () => {
             <p className="text-white text-lg md:text-2xl mb-6">{slide.desc}</p>
             <div className="flex gap-4">
               <a
-                href="tel:9876543210"
+                href="tel: 883 961 7340"
                 className="bg-yellow-400 text-black font-serif px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition"
               >
                 Call Now
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/91 883 961 7340"
                 className="border border-yellow-400 font-serif text-yellow-400 px-6 py-2 rounded hover:bg-yellow-400 hover:text-black transition"
               >
                 WhatsApp Us

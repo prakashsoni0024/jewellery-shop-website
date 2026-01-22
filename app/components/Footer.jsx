@@ -20,7 +20,7 @@ const Footer = () => {
           {/* SOCIAL ICONS */}
           <div className="flex gap-4 mt-4">
             <a
-              href="https://www.instagram.com/prakashsoni08"
+              href="https://www.instagram.com/indra_jewellers_jabalpur"
               className="text-gray-300 hover:text-yellow-400 transition-colors text-lg"
             >
               <FaInstagram />
@@ -32,7 +32,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/91 883 961 7340"
               className="text-gray-300 hover:text-yellow-400 transition-colors text-lg"
             >
               <FaWhatsapp />
@@ -46,10 +46,10 @@ const Footer = () => {
           <p className="text-gray-300 text-sm md:text-base">
             HN818, Madhotal Rajeev Gandhi Nagar, Jabalpur (M.P.)
           </p>
-          <p className="text-gray-300 text-sm md:text-base">📞 9876543210</p>
+          <p className="text-gray-300 text-sm md:text-base">📞  883 961 7340</p>
           <p className="text-gray-300 text-sm md:text-base">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/91 883 961 7340"
               className="hover:text-yellow-400 transition-colors"
             >
               WhatsApp Chat

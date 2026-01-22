@@ -6,7 +6,7 @@ import { HiMenu, HiX } from "react-icons/hi"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const links = ["Home", "Products", "Gallery", "About", "Contact"]
+  const links = ["Home", "Products", "Gallery", "Valuation", "About", "Contact"]
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-black/70 backdrop-blur-md shadow-md px-6 md:px-12 py-4 flex justify-between items-center transition-all duration-300">

@@ -251,6 +251,80 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ULTRA-LUXURY INSTAGRAM EMBED */}
+      <section className="relative py-28 px-4 bg-[#0b0b0b] overflow-hidden">
+        {/* GOLD AMBIENT GLOW */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(234,179,8,0.15),transparent_60%)]"></div>
+
+        {/* HEADING */}
+        <div className="relative text-center mb-20">
+          <h2 className="text-3xl md:text-5xl font-serif text-white tracking-wide">
+            Our Presence on <span className="text-yellow-500">Instagram</span>
+          </h2>
+          <p className="mt-4 text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
+            Followed by upto{" "}
+            <span className="text-yellow-500 font-semibold">100,000</span>{" "}
+            jewellery lovers. A glimpse of timeless craftsmanship and everyday
+            luxury.
+          </p>
+        </div>
+
+        {/* FRAME */}
+        <div className="relative max-w-6xl mx-auto">
+          {/* GOLD BORDER */}
+          <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-r from-yellow-500/60 via-yellow-300/40 to-yellow-500/60 blur"></div>
+
+          {/* GLASS CARD */}
+          <div className="relative rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl p-6 md:p-10">
+            {/* PROFILE BAR */}
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+              <div className="text-center md:text-left">
+                <h3 className="text-xl md:text-2xl font-serif text-white">
+                  @indra_jewellers_jabalpur
+                </h3>
+                <p className="text-gray-400 text-sm mt-1">
+                  Heritage • Purity • Modern Elegance
+                </p>
+              </div>
+
+              {/* CTA */}
+              <a
+                href="https://www.instagram.com/indra_jewellers_jabalpur/"
+                target="_blank"
+                className="
+            px-10 py-3
+            text-sm tracking-widest uppercase
+            font-serif
+            bg-yellow-500 text-black
+            rounded-full
+            hover:bg-white
+            transition
+          "
+              >
+                Follow on Instagram
+              </a>
+            </div>
+
+            {/* EMBED */}
+            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              <iframe
+                src="https://www.instagram.com/indra_jewellers_jabalpur/embed"
+                className="w-full h-[600px] md:h-[720px] border-none"
+                loading="lazy"
+              />
+            </div>
+
+            {/* TRUST LINE */}
+            <p className="mt-8 text-center text-gray-400 italic font-serif text-sm md:text-base">
+              Trusted by generations • Celebrated by a community of upto 100K
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* OFFERS */}
+      <Offers />
+
       {/* LUXURY DIVIDER LINE */}
       <section className="bg-[#faf9f7] py-7">
         <div className="mt-10 flex items-center justify-center gap-6 text-gray-400">
@@ -268,9 +342,6 @@ const Home = () => {
           <span className="h-px w-24 bg-gray-300"></span>
         </div>
       </section>
-
-      {/* OFFERS */}
-      <Offers />
     </main>
   );
 };
