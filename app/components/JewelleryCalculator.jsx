@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
 export default function JewellersUnifiedCalculator() {
   const [mode, setMode] = useState("owner"); // "owner" or "customer"
 
@@ -32,7 +33,7 @@ export default function JewellersUnifiedCalculator() {
   useEffect(() => {
     const fetchPrices = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/live-prices");
+        const res = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/live-prices`);
         setGold24K(res.data.gold["24k"]);
         setGold22K(res.data.gold["22k"]);
         setSilver(res.data.silver.price);
