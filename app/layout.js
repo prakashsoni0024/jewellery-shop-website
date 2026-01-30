@@ -1,12 +1,34 @@
-import "./globals.css"
-import Navbar from "./components/Navbar"
-import WhatsAppButton from "./components/WhatsAppButton"
-import Footer from "./components/Footer"
-
+import "./globals.css";
+import Navbar from "./components/Navbar";
+import WhatsAppButton from "./components/WhatsAppButton";
+import Footer from "./components/Footer";
 export const metadata = {
-  title: "Indra Jewellers - Trusted Jewellery Store",
-  description: "Trusted Jewellery Store",
-}
+  title: {
+    default: "Indra Jewellers Jabalpur | Gold, Diamond & Silver Jewellery",
+    template: "%s | Indra Jewellers Jabalpur",
+  },
+  description:
+    "Indra Jewellers Jabalpur – Trusted jewellery store offering BIS hallmarked gold, diamond and silver jewellery with timeless designs and purity assurance.",
+
+  keywords: [
+    "Indra Jewellers Jabalpur",
+    "Gold jewellery Jabalpur",
+    "Diamond jewellery Jabalpur",
+    "Silver jewellery shop Jabalpur",
+    "BIS hallmarked gold Jabalpur",
+  ],
+
+  metadataBase: new URL("https://indrajewellers.com"),
+
+  openGraph: {
+    title: "Indra Jewellers Jabalpur | Premium Gold & Diamond Jewellery",
+    description:
+      "Explore premium gold, diamond and silver jewellery at Indra Jewellers Jabalpur. Trusted purity, elegant designs and timeless craftsmanship.",
+    url: "https://indrajewellers.com",
+    siteName: "Indra Jewellers",
+    type: "website",
+  },
+};
 
 const RootLayout = ({ children }) => {
   return (
@@ -14,12 +36,11 @@ const RootLayout = ({ children }) => {
       <body className="scroll-smooth">
         <Navbar />
         {children}
-         <WhatsAppButton />
-         <Footer />
+        <WhatsAppButton />
+        <Footer />
       </body>
-     
     </html>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
