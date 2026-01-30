@@ -15,7 +15,8 @@ export default function CalculatorPage() {
   useEffect(() => {
     const fetchPrices = async () => {
       try {
-        const res = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/live-prices`);
+        const res = await axios.get("https://jewellery-backend-1.onrender.com/api/live-prices");
+        // const res = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/live-prices`);
         setGold24K(Number(res.data.gold["24k"]) || 0);
         setGold22K(Number(res.data.gold["22k"]) || 0);
         setSilver(Number(res.data.silver.price) || 0);

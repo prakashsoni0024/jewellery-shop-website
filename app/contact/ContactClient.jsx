@@ -75,7 +75,7 @@ const Contact = () => {
               <iframe
                 title="Indra Jewellers Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.268829265532!2d79.90836999999999!3d23.196871599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b1d27e9ed5a1%3A0x4876d7d367e244d7!2sIndra%20Jewellers!5e0!3m2!1sen!2sin!4v1769803150318!5m2!1sen!2sin"
-                className="w-full h-[360px] md:h-[460px] border-0"
+                className="w-full h-[360px] md:h-[500px] border-0"
                 loading="lazy"
               />
             </div>
