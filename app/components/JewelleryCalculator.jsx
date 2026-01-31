@@ -219,7 +219,7 @@ export default function JewellersUnifiedCalculator() {
             </div>
 
             <div className="flex justify-between items-center bg-gray-50 p-3 rounded-xl shadow-sm text-sm">
-              <span className="text-gray-700">Making Charges (15%)</span>
+              <span className="text-gray-800 font-medium">Making Charges (15%)</span>
               <span className="font-semibold text-gray-900">
                 ₹{(weight * rate * 0.15).toFixed(2)}
               </span>
