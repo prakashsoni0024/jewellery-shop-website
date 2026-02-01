@@ -130,22 +130,29 @@ const HomeClient = () => {
         {/* MOBILE → horizontal scroll | DESKTOP → grid */}
         <div
           className="
-      flex md:grid
-      md:grid-cols-3
-      gap-6 md:gap-10
-      max-w-7xl mx-auto
-      overflow-x-auto md:overflow-visible
-      snap-x snap-mandatory
-      px-2
-    "
+    flex flex-nowrap md:grid
+    md:grid-cols-3
+    gap-6 md:gap-10
+    max-w-7xl mx-auto
+    overflow-x-auto md:overflow-visible
+    snap-x snap-mandatory
+    scroll-smooth
+    px-2
+  "
         >
           {featuredDesigns.map((item, index) => (
-            <a href="/products" key={index}>
+            <a
+              key={index}
+              href="/products"
+              className="
+        block
+        min-w-[85%] sm:min-w-[70%] md:min-w-0
+        snap-center
+      "
+            >
               <div
                 className="
           group relative
-          min-w-[85%] sm:min-w-[70%] md:min-w-0
-          snap-center
           overflow-hidden
           rounded-2xl
           bg-white
@@ -350,4 +357,4 @@ const HomeClient = () => {
   );
 };
 
-export default  HomeClient;
+export default HomeClient;
