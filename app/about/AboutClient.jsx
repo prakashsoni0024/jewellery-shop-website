@@ -44,7 +44,7 @@ const About = () => {
     <main className="bg-[#faf9f7] overflow-hidden">
 
       {/* HERO */}
-      <section className="py-28 px-6 text-center">
+      <section className="py-28 px-6 text-center ">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,13 +60,13 @@ const About = () => {
       </section>
 
       {/* IMAGE + STORY */}
-      <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center mb-28">
+      <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center md:mb-40">
         
         <motion.img
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          src="https://www.hollywoodreporter.com/wp-content/uploads/2024/08/Shah-Rukh-Khan-Final-Getty-H-2024.jpg?w=1296&h=730&crop=1"
+          src="/indra-papa.jpeg"
           alt="Jewellery Store"
           className="rounded-3xl shadow-2xl h-[420px] w-full object-cover"
         />
@@ -87,6 +87,35 @@ const About = () => {
             piece is crafted to celebrate life’s most precious moments.
           </p>
         </div>
+      </section>
+          <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center mb-28">
+             <div>
+          {/* <h2 className="text-3xl font-serif text-gray-900 mb-6">
+            Our Story
+          </h2> */}
+
+          <p className="text-gray-700 leading-relaxed mt-5 md:0 mb-5">
+            Indra Jewellers is a trusted, family-owned jewellery store that has
+            been serving customers with honesty and purity for over 20 years.
+            Our commitment to quality has helped us build relationships across generations.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed">
+            From traditional gold jewellery to modern diamond designs, every
+            piece is crafted to celebrate life’s most precious moments.
+          </p>
+        </div>
+        
+        <motion.img
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          src="/indra-boy.jpeg"
+          alt="Jewellery Store"
+          className="rounded-3xl shadow-2xl h-[420px] w-full object-cover"
+        />
+
+       
       </section>
 
       {/* VALUES */}

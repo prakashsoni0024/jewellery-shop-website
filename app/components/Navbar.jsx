@@ -1,26 +1,31 @@
-"use client"
-
-import Link from "next/link"
-import { useState } from "react"
-import { HiMenu, HiX } from "react-icons/hi"
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const links = ["Home", "Products", "Gallery", "Valuation", "About", "Contact"]
+  const [isOpen, setIsOpen] = useState(false);
+  const links = [
+    "Home",
+    "Products",
+    "Gallery",
+    "Valuation",
+    "About",
+    "Contact",
+  ];
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-black/70 backdrop-blur-md shadow-md px-6 md:px-12 py-4 flex justify-between items-center transition-all duration-300">
-      
-      {/* LOGO TEXT - Premium IJ */}
+      {/* LOGO IMAGE */}
       <Link href="/">
         <span className="text-3xl md:text-4xl font-serif font-extrabold text-yellow-400 tracking-wider relative group">
-          IJ
-          {/* Glow underline effect */}
-          <span className="absolute left-0 -bottom-1 w-0 h-1 bg-yellow-400 rounded transition-all duration-500 group-hover:w-full"></span>
-          {/* Optional subtle shadow/glow */}
-          <span className="absolute inset-0 text-yellow-400 opacity-20 blur-sm"></span>
+          IJ {/* Glow underline effect */}
+          <span className="absolute left-0 -bottom-1 w-0 h-1 bg-yellow-400 rounded transition-all duration-500 group-hover:w-full"></span>{" "}
+          {/* Optional subtle shadow/glow */}{" "}
+          <span className="absolute inset-0 text-yellow-400 opacity-20 blur-sm"></span>{" "}
         </span>
       </Link>
+
 
       {/* Desktop Links */}
       <div className="hidden md:flex gap-8 items-center">
@@ -64,7 +69,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

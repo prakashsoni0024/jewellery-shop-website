@@ -1,46 +1,46 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 const slides = [
   {
-    img: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed",
-    title: "Exquisite Gold Jewellery",
-    desc: "Rings, Chains, Bangles & more",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f",
-    title: "Diamond Collection",
-    desc: "Modern & Elegant Designs",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0",
+    img: "./bg3.jpeg",
     title: "Traditional Classics",
     desc: "Timeless Indian Jewellery",
   },
   {
-    img: "https://i.pinimg.com/1200x/29/dc/75/29dc751caa2eed0a2e2cd3c2fa568fbb.jpg",
-    title: "Custom Creations",
-    desc: "Crafted Just for You",
+    img: "./bg1.jpeg",
+    title: "Exquisite Gold Jewellery",
+    desc: "Rings, Chains, Bangles & more",
   },
-]
+  {
+    img: "./bg2.jpeg",
+    title: "Diamond Collection",
+    desc: "Modern & Elegant Designs",
+  },
+    {
+    img: "./bg1.jpeg",
+    title: "Exquisite Gold Jewellery",
+    desc: "Rings, Chains, Bangles & more",
+  },
+];
 
 const HeroCarousel = () => {
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(0);
 
   // Auto slide every 4 sec
   useEffect(() => {
-    console.log("Current slide:", current)
+    console.log("Current slide:", current);
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length)
-    }, 4000)
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 4000);
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   const prevSlide = () =>
-    setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length)
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
 
   return (
     <section className="relative w-full h-[500px] md:h-[600px] overflow-hidden">
@@ -109,7 +109,7 @@ const HeroCarousel = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroCarousel
+export default HeroCarousel;
