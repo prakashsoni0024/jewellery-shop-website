@@ -102,10 +102,3 @@ const Row = ({ label, children }) => (
     {children}
   </div>
 );
-
-
-export const metadata = {
-  title: "Jewellery Valuation Calculator",
-  description:
-    "Accurate gold and silver jewellery valuation calculator with live price, GST and making charges in Jabalpur.",
-};
