@@ -74,10 +74,11 @@ const Contact = () => {
             >
               <iframe
                 title="Indra Jewellers Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.268829265532!2d79.90836999999999!3d23.196871599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b1d27e9ed5a1%3A0x4876d7d367e244d7!2sIndra%20Jewellers!5e0!3m2!1sen!2sin!4v1769803150318!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.2861673827642!2d79.90438457531907!3d23.19623947905242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzQ2LjUiTiA3OcKwNTQnMjUuMSJF!5e0!3m2!1sen!2sin!4v1770535810807!5m2!1sen!2sin"
                 className="w-full h-[360px] md:h-[500px] border-0"
                 loading="lazy"
               />
+              {/* <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sin!4v1770535618288!5m2!1sen!2sin!6m8!1m7!1sKNHhFd1MGRT2wMCu7KZOFg!2m2!1d23.19623184947889!2d79.90681400022686!3f133.17107582869573!4f-0.8733067325784418!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>*/}
             </div>
 
             {/* CONTACT CARD */}
@@ -95,13 +96,11 @@ const Contact = () => {
                     Address
                   </p>
                   <p className="mt-1 text-gray-800 leading-relaxed">
-                    5WW5+P8V, Patan Rd,
+                    Chungi Naka Chowk, H No 196,
                     <br />
-                    Near ITI, Madhotal,
+                    Akash Vihar Road,
                     <br />
-                    Kanchan Vihar, Vijay Nagar,
-                    <br />
-                    Jabalpur, GCF Jabalpur,
+                    Jabalpur,
                     <br />
                     Madhya Pradesh 482002
                   </p>
