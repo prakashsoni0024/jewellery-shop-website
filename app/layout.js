@@ -20,6 +20,12 @@ export const metadata = {
 
   metadataBase: new URL("https://indrajewellers.com"),
 
+  icons: {
+    icon: "/short ij.png",
+    shortcut: "/short ij.ico",
+    apple: "/apple-short ij.png",
+  },
+
   openGraph: {
     title: "Indra Jewellers Jabalpur | Premium Gold & Diamond Jewellery",
     description:
