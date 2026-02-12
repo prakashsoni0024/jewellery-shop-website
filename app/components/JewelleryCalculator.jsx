@@ -244,7 +244,6 @@ export default function JewellersUnifiedCalculator() {
           type="number"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
-          placeholder="g"
           className="w-24 border rounded px-2 py-1"
         />
       </Row>
