@@ -69,9 +69,9 @@ const Footer = () => {
         <div>
           <h3 className="text-yellow-400 font-semibold mb-3">Contact</h3>
           <p className="text-gray-300 text-sm md:text-base">
-            HN818, Madhotal Rajeev Gandhi Nagar, Jabalpur (M.P.)
+             Chungi Naka Chowk, H No 196, Akash Vihar Road, Jabalpur, Madhya Pradesh 482002
           </p>
-          <p className="text-gray-300 text-sm md:text-base">📞 883 961 7340</p>
+          <p className="text-gray-300 text-sm md:text-base">📞 +91 8839617340</p>
           <p className="text-gray-300 text-sm md:text-base">
             <a
               href="https://wa.me/918839617340"
@@ -81,7 +81,7 @@ const Footer = () => {
             </a>
           </p>
           <p className="text-gray-300 text-sm md:text-base">
-            📧 info@indrajewellers.com
+            📧 krishna.soni88396@gmail.com
           </p>
         </div>
 

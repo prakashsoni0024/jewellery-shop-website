@@ -3,21 +3,23 @@
 import { useState, useEffect } from "react";
 
 const slides = [
-  {
-    img: "./bg3.jpeg",
-    title: "Traditional Classics",
-    desc: "Timeless Indian Jewellery",
+   {
+    img: "./bg2.jpeg",
+    title: "Diamond Collection",
+    desc: "Modern & Elegant Designs",
   },
-  {
+   {
     img: "./bg1.jpeg",
     title: "Exquisite Gold Jewellery",
     desc: "Rings, Chains, Bangles & more",
   },
   {
-    img: "./bg2.jpeg",
-    title: "Diamond Collection",
-    desc: "Modern & Elegant Designs",
+    img: "./bg3.jpeg",
+    title: "Traditional Classics",
+    desc: "Timeless Indian Jewellery",
   },
+ 
+ 
     {
     img: "./bg1.jpeg",
     title: "Exquisite Gold Jewellery",
